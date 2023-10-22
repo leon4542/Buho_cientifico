@@ -1,0 +1,29 @@
+########################################################################################
+####################	 Algunos comandos de utilidad		##################################
+########################################################################################
+
+### Mide el tiempo desde que se corre la celda 
+> start = time.time()    ===> Inicia el contador
+> end = tme.time()    ===> Termina el contador
+
+### Muestra el directorio de ubicacion actual
+> os.popen('pwd').read()
+
+
+### Muestra el contenido del directorio de ubicacion
+> os.popen('ls -lhrt').read()
+
+
+### Creacion de un directorio
+> folder_demo = 'atlas-demo-Hyy'
+> command1 = 'mkdir '+folder_demo
+> os.system(command1)
+
+
+### Ingresamos en la carpeta que recien creamos 
+os.chdir('folder_name')
+
+
+### # Clonamos la data que se encuentra en un repositorio
+> myCmd = os.popen('git clone <direccion_URL_repositorio>').read()
+> print(myCmd)
